@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
+    <!-- Визначення кодування символів -->
     <meta charset="UTF-8">
+    <!-- Налаштування видимості для адаптивного дизайну -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Посилання на зовнішній таблиці стилів -->
     <link rel="stylesheet" href="./style.css">
-    <title>Lift Control System</title>
+    <!-- Заголовок веб-сторінки -->
+    <title>Система управління ліфтом</title>
 </head>
 <body>
+    <!-- Секція ліфта, що містить статус ліфта, таймер і кнопки -->
     <section class="lift">
+        <!-- Відображення поточного статусу ліфта -->
         <div id="lift-status">Ліфт стоїть</div>
+        <!-- Відображення таймера зворотного відліку для наступного поверху -->
         <div id="timer">Наступний поверх через <span id="countdown">--</span> секунд</div>
+        <!-- Навігаційні кнопки для вибору різних поверхів -->
         <nav id="buttons">
+            <!-- Кнопка для вибору 1-го поверху -->
             <button class="button" onclick="requestFloor(1)">1 Поверх</button>
+            <!-- Кнопка для вибору 2-го поверху -->
             <button class="button" onclick="requestFloor(2)">2 Поверх</button>
+            <!-- Кнопка для вибору 3-го поверху -->
             <button class="button" onclick="requestFloor(3)">3 Поверх</button>
+            <!-- Кнопка для вибору 4-го поверху -->
             <button class="button" onclick="requestFloor(4)">4 Поверх</button>
+            <!-- Кнопка для вибору 5-го поверху -->
             <button class="button" onclick="requestFloor(5)">5 Поверх</button>
         </nav>
     </section>
-<script src="app.js"></script>
+    <!-- Включення файлу JavaScript для управління ліфтом -->
+    <script src="app.js"></script>
 </body>
 </html>
