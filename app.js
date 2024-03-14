@@ -35,7 +35,7 @@ class Elevator {
     // Запуск таймера відліку часу
     const countdownTimer = setInterval(() => {
       timeLeft -= 1000;
-      timerElement.textContent = timeLeft / 1000 + ' секунд';
+      timerElement.textContent = timeLeft / 1000;
       // При завершенні таймера досягнуто цільового поверху
       if (timeLeft <= 0) {
         clearInterval(countdownTimer);
